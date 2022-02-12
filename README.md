@@ -9,4 +9,4 @@ bones: `hkcltool [--bonelist/-bl] [hkx or json]`\
 removing: `hkcltool [--remove/-r] [json/hkx] [hkcl or json] [index to remove]`\
 converting platform: `hkcltool [--export/-e] [json/hhx] [hkx or json]`
 
-FOr meging, the cloth indexes you'll want to put is usually 0, however there may be multiple cloth pieces in a hkx.
+For meging, the cloth indexes you'll want to put is usually 0, however there may be multiple cloth pieces in a hkx.
