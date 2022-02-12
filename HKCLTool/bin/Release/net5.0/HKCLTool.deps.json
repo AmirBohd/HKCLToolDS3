@@ -1,0 +1,116 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "HKCLTool/1.0.0": {
+        "dependencies": {
+          "HKX2": "1.0.0",
+          "HKX2ReadWrite": "1.0.0",
+          "HKXClassGen": "1.0.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "HKCLTool.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.0.0": {},
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "System.Text.Encoding.CodePages/4.6.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0"
+        }
+      },
+      "HKX2/1.0.0": {
+        "dependencies": {
+          "SoulsFormats": "1.0.0"
+        },
+        "runtime": {
+          "HKX2.dll": {}
+        }
+      },
+      "HKX2ReadWrite/1.0.0": {
+        "dependencies": {
+          "HKX2": "1.0.0"
+        },
+        "runtime": {
+          "HKX2ReadWrite.dll": {}
+        }
+      },
+      "HKXClassGen/1.0.0": {
+        "dependencies": {
+          "SoulsFormats": "1.0.0"
+        },
+        "runtime": {
+          "HKXClassGen.dll": {}
+        }
+      },
+      "SoulsFormats/1.0.0": {
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "4.6.0"
+        },
+        "runtime": {
+          "SoulsFormats.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HKCLTool/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TsETIgVJb/AKoYfSP+iCxkuly5d3inZjTdx/ItZLk2CxY85v8083OBS3uai84kK3/baLnS5/b5XGs6zR7SuuHQ==",
+      "path": "microsoft.netcore.platforms/3.0.0",
+      "hashPath": "microsoft.netcore.platforms.3.0.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OCUK9C/U97+UheVwo+JE+IUcKySUE3Oe+BcHhVtQrvmKSUFLrUDO8B5zEPRL6mBGbczxZp4w1boSck6/fw4dog==",
+      "path": "system.text.encoding.codepages/4.6.0",
+      "hashPath": "system.text.encoding.codepages.4.6.0.nupkg.sha512"
+    },
+    "HKX2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HKX2ReadWrite/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HKXClassGen/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SoulsFormats/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,13 @@
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\bin\Debug\netcoreapp3.1\HKX2.deps.json
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\bin\Debug\netcoreapp3.1\HKX2.dll
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\bin\Debug\netcoreapp3.1\HKX2.pdb
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\bin\Debug\netcoreapp3.1\SoulsFormats.dll
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\bin\Debug\netcoreapp3.1\SoulsFormats.pdb
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\bin\Debug\netcoreapp3.1\SoulsFormats.xml
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\obj\Debug\netcoreapp3.1\HKX2.csprojAssemblyReference.cache
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\obj\Debug\netcoreapp3.1\HKX2.AssemblyInfoInputs.cache
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\obj\Debug\netcoreapp3.1\HKX2.AssemblyInfo.cs
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\obj\Debug\netcoreapp3.1\HKX2.csproj.CoreCompileInputs.cache
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\obj\Debug\netcoreapp3.1\HKX2.csproj.CopyComplete
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\obj\Debug\netcoreapp3.1\HKX2.dll
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKX2\obj\Debug\netcoreapp3.1\HKX2.pdb

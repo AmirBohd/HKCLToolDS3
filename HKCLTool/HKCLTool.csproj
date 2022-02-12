@@ -6,8 +6,28 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BotW-HKX2" Version="1.0.0" />
+    <Compile Remove="HKX2ReadWrite\**" />
+    <Compile Remove="HKX2\**" />
+    <Compile Remove="HKXClassGen\**" />
+    <Compile Remove="SoulsFormats\**" />
+    <EmbeddedResource Remove="HKX2ReadWrite\**" />
+    <EmbeddedResource Remove="HKX2\**" />
+    <EmbeddedResource Remove="HKXClassGen\**" />
+    <EmbeddedResource Remove="SoulsFormats\**" />
+    <None Remove="HKX2ReadWrite\**" />
+    <None Remove="HKX2\**" />
+    <None Remove="HKXClassGen\**" />
+    <None Remove="SoulsFormats\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="HKX2ReadWrite\HKX2ReadWrite.csproj" />
+    <ProjectReference Include="HKX2\HKX2.csproj" />
+    <ProjectReference Include="HKXClassGen\HKXClassGen.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,16 @@
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\bin\Release\netcoreapp3.1\HKXClassGen.exe
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\bin\Release\netcoreapp3.1\HKXClassGen.deps.json
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\bin\Release\netcoreapp3.1\HKXClassGen.runtimeconfig.json
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\bin\Release\netcoreapp3.1\HKXClassGen.runtimeconfig.dev.json
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\bin\Release\netcoreapp3.1\HKXClassGen.dll
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\bin\Release\netcoreapp3.1\HKXClassGen.pdb
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\bin\Release\netcoreapp3.1\SoulsFormats.dll
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\bin\Release\netcoreapp3.1\SoulsFormats.xml
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\obj\Release\netcoreapp3.1\HKXClassGen.csprojAssemblyReference.cache
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\obj\Release\netcoreapp3.1\HKXClassGen.AssemblyInfoInputs.cache
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\obj\Release\netcoreapp3.1\HKXClassGen.AssemblyInfo.cs
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\obj\Release\netcoreapp3.1\HKXClassGen.csproj.CoreCompileInputs.cache
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\obj\Release\netcoreapp3.1\HKXClassGen.csproj.CopyComplete
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\obj\Release\netcoreapp3.1\HKXClassGen.dll
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\obj\Release\netcoreapp3.1\HKXClassGen.pdb
+E:\DARK SOULS RES\PROJECTS\HKCLToolDS3\HKCLTool\HKXClassGen\obj\Release\netcoreapp3.1\HKXClassGen.genruntimeconfig.cache

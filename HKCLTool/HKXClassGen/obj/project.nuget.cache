@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jBmxvBDF9u/cA1N97ydOgdpPa0JAUH+DuMUadN9a/EOUgJFW+uxIi/lcb2LMvAoi13C8d3bxf6U1qsmaXUMbNA==",
+  "success": true,
+  "projectFilePath": "E:\\DARK SOULS RES\\PROJECTS\\HKCLToolDS3\\HKCLTool\\HKXClassGen\\HKXClassGen.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\amira\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+    "C:\\Users\\amira\\.nuget\\packages\\system.text.encoding.codepages\\4.6.0\\system.text.encoding.codepages.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

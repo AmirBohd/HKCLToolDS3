@@ -1,31 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using HKX2;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
+using SoulsFormats;
 
 namespace HKCLTool
 {
-    public class ShouldSerializeContractResolver : DefaultContractResolver
-    {
-        protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
-        {
-            var property = base.CreateProperty(member, memberSerialization);
-
-            if (property.PropertyName != null && property.PropertyName.StartsWith("m_"))
-                property.PropertyName = property.PropertyName.Substring(2);
-            if (property.PropertyName == "Signature") property.ShouldSerialize = instance => false;
-            if (property.PropertyName == "IsIdentity") property.ShouldSerialize = instance => false;
-            if (property.PropertyName == "Translation") property.ShouldSerialize = instance => false;
-
-            return property;
-        }
-    }
-
     class Program
     {
         static List<string> ClothDataNameList = new List<string>();
@@ -92,6 +76,22 @@ namespace HKCLTool
             return;
         }
 
+        public class ShouldSerializeContractResolver : DefaultContractResolver
+        {
+            protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
+            {
+                var property = base.CreateProperty(member, memberSerialization);
+
+                if (property.PropertyName != null && property.PropertyName.StartsWith("m_"))
+                    property.PropertyName = property.PropertyName.Substring(2);
+                if (property.PropertyName == "Signature") property.ShouldSerialize = instance => false;
+                if (property.PropertyName == "IsIdentity") property.ShouldSerialize = instance => false;
+                if (property.PropertyName == "Translation") property.ShouldSerialize = instance => false;
+
+                return property;
+            }
+        }
+
         #region Main Hkx Handling
 
         private static readonly JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings
@@ -105,20 +105,10 @@ namespace HKCLTool
             }
         };
 
-        private static readonly Dictionary<string, short> BotwSectionOffsetForExtension =
-            new Dictionary<string, short>
-            {
-                {"hkcl", 0},
-                {"hkrg", 0},
-                {"hkrb", 0},
-                {"hktmrb", 16},
-                {"hknm2", 16}
-            };
-
         internal static IHavokObject ReadHKX(byte[] bytes)
         {
             var des = new PackFileDeserializer();
-            var br = new BinaryReaderEx(bytes);
+            var br = new BinaryReaderEx(false, bytes);
 
             return des.Deserialize(br);
         }
@@ -130,7 +120,7 @@ namespace HKCLTool
                 var Json = (List<IHavokObject>)JsonConvert.DeserializeObject(File.ReadAllText(infile), typeof(List<IHavokObject>), jsonSerializerSettings);
                 return (hkRootLevelContainer)Json[0];
             }
-            else if (Path.GetExtension(infile) == ".hkcl")
+            else if (Path.GetExtension(infile) == ".hkx")
             {
                 return (hkRootLevelContainer)ReadHKX(File.ReadAllBytes(infile));
             }
@@ -138,20 +128,19 @@ namespace HKCLTool
                 return null;
         }
 
-        internal static byte[] WriteHKX(IHavokObject root, HKXHeader header)
+        internal static byte[] WriteHKX(IHavokObject root)
         {
             var s = new PackFileSerializer();
             var ms = new MemoryStream();
-            var bw = new BinaryWriterEx(ms);
-            s.Serialize(root, bw, header);
+            var bw = new BinaryWriterEx(false, ms);
+            s.Serialize(root, bw);
             return ms.ToArray();
         }
 
-        public static byte[] WriteBotwHKX(IReadOnlyList<IHavokObject> roots, string extension, HKXHeader header)
+        public static byte[] WriteDS3HKX(IReadOnlyList<IHavokObject> roots)
         {
             var root = roots[0];
-            header.SectionOffset = BotwSectionOffsetForExtension[extension];
-            var writtenRoot = WriteHKX(root, header);
+            var writtenRoot = WriteHKX(root);
             return writtenRoot;
         }
 
@@ -233,18 +222,9 @@ namespace HKCLTool
                 var jsonfile = JsonConvert.SerializeObject(new List<IHavokObject> { hkfile }, jsonSerializerSettings);
                 File.WriteAllText(outpath + ".json", jsonfile);
             }
-            else
+            else //hkx
             {
-                HKXHeader header;
-                if (outformat == "hknx")
-                    header = HKXHeader.BotwNx();
-                else
-                    header = HKXHeader.BotwWiiu();
-
-                if (File.Exists(outpath + ".hkcl"))
-                    File.Delete(outpath + ".hkcl");
-
-                File.WriteAllBytes(outpath + ".hkcl", WriteBotwHKX(new List<IHavokObject> { hkfile }, "hkcl", header));
+                File.WriteAllBytes(outpath + ".hkx", WriteDS3HKX(new List<IHavokObject> { hkfile }));
             }
         }
 
@@ -262,8 +242,7 @@ namespace HKCLTool
                     ClothDataNameList.Add(clothdatas.m_name);
                 }
             }
-
-            Console.WriteLine("Cloth List:");
+            
             int i = 0;
             foreach (string name in ClothDataNameList)
             {

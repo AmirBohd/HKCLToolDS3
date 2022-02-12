@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HKCLTool", "HKCLTool\HKCLTool.csproj", "{D357BED1-7A69-47DA-ABBB-BB41A3E6B8BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HKCLTool", "HKCLTool\HKCLTool.csproj", "{D357BED1-7A69-47DA-ABBB-BB41A3E6B8BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HKX2", "HKCLTool\HKX2\HKX2.csproj", "{C8730D2C-FE92-4F46-9A3F-2DAF38AB7C81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HKX2ReadWrite", "HKCLTool\HKX2ReadWrite\HKX2ReadWrite.csproj", "{7BF85897-9352-429F-BFF4-2F571FC08526}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HKXClassGen", "HKCLTool\HKXClassGen\HKXClassGen.csproj", "{9494CDB5-4081-4674-A9C0-67F4B7F34ECD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoulsFormats", "HKCLTool\SoulsFormats\SoulsFormats.csproj", "{EDBB2E35-AC0F-4F93-B977-B8BFB4C4DD90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{D357BED1-7A69-47DA-ABBB-BB41A3E6B8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D357BED1-7A69-47DA-ABBB-BB41A3E6B8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D357BED1-7A69-47DA-ABBB-BB41A3E6B8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8730D2C-FE92-4F46-9A3F-2DAF38AB7C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8730D2C-FE92-4F46-9A3F-2DAF38AB7C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8730D2C-FE92-4F46-9A3F-2DAF38AB7C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8730D2C-FE92-4F46-9A3F-2DAF38AB7C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BF85897-9352-429F-BFF4-2F571FC08526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BF85897-9352-429F-BFF4-2F571FC08526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BF85897-9352-429F-BFF4-2F571FC08526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BF85897-9352-429F-BFF4-2F571FC08526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9494CDB5-4081-4674-A9C0-67F4B7F34ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9494CDB5-4081-4674-A9C0-67F4B7F34ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9494CDB5-4081-4674-A9C0-67F4B7F34ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9494CDB5-4081-4674-A9C0-67F4B7F34ECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDBB2E35-AC0F-4F93-B977-B8BFB4C4DD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDBB2E35-AC0F-4F93-B977-B8BFB4C4DD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDBB2E35-AC0F-4F93-B977-B8BFB4C4DD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDBB2E35-AC0F-4F93-B977-B8BFB4C4DD90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
